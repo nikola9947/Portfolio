@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Nikola Bryks</title>
+  <meta name="description" content="Portfolio Website – About, Projects, Resume, Contact" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="topbar" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Zur Startseite">
+        <span class="brand-dot" aria-hidden="true"></span>
+      </a>
+
+      <div class="nav-right">
+        <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">ABOUT ME</a></li>
+        <li><a href="#portfolio" class="nav-link" data-i18n="nav.portfolio">PORTFOLIO</a></li>
+        <li><a href="#resume" class="nav-link" data-i18n="nav.resume">RESUME</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">CONTACT</a></li>
+
+        <li class="nav-lang">
+          <button class="lang-toggle" id="langToggle" type="button" aria-label="Sprache wechseln / Change language">
+            <span class="lang-pill" id="langLabel">DE</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Intro">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="hero-kicker" data-i18n="hero.kicker">Hello, I’m</p>
+        <h1 class="hero-title"><span class="hero-name">Nikola Bryks</span></h1>
+        <p class="hero-sub" data-i18n="hero.sub">AND THIS IS MY RESUME</p>
+      </div>
+
+      <a class="hero-scroll" href="#about" aria-label="Zum About Bereich scrollen">
+        <span class="hero-scroll-dot" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-bar">
+        <button class="section-toggle" type="button" data-accordion="aboutPanel" aria-expanded="false">
+          <span data-i18n="section.about">About Me</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="section-body is-collapsed" id="aboutPanel">
+        <div class="card">
+          <div data-i18n-html="about.body"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="section-bar">
+        <button class="section-toggle" type="button" data-accordion="portfolioPanel" aria-expanded="false">
+          <span data-i18n="section.portfolio">Portfolio</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="section-body is-collapsed" id="portfolioPanel">
+        <div class="grid">
+
+          <article class="project project-vr" id="openVideo" tabindex="0">
+            <div class="project-thumb" aria-hidden="true"></div>
+            <h3 class="project-title" data-i18n="p.spaceelevator.title">How does a Space Elevator work</h3>
+            <p class="project-desc" data-i18n="p.spaceelevator.desc">
+              Development and production of an explanatory film in the form of a 3D animation.
+            </p>
+          </article>
+
+          <article class="project project-carousel" data-carousel="design">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prev">‹</button>
+              <img class="carousel-img" src="assets/Design_Screenshot_1.png" alt="Design 1" loading="lazy" />
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.next">›</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+            </div>
+            <h3 class="project-title">Styleguide</h3>
+            <p class="project-desc"></p>
+          </article>
+
+          <article class="project">
+            <div class="project-media">
+              <img class="zoomable-img" src="assets/Grundlagen 3D_Titelbild.png" alt="Basics 3D Design" loading="lazy" />
+            </div>
+            <h3 class="project-title" data-i18n="p.basics3d.title">Basics 3D Design</h3>
+            <p class="project-desc" data-i18n="p.basics3d.desc">Title image & layout for the tech magazine “Science Vision” (Print).</p>
+          </article>
+
+          <article class="project">
+            <div class="project-media">
+              <img class="zoomable-img" src="assets/Grundlagen Design_Titelbild.png" alt="Basics Design" loading="lazy" />
+            </div>
+            <h3 class="project-title" data-i18n="p.basicsdesign.title">Basics Design</h3>
+            <p class="project-desc" data-i18n="p.basicsdesign.desc">Right-wing populism in Europe and Germany</p>
+          </article>
+
+          <article class="project project-carousel" data-carousel="photo">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prev">‹</button>
+              <img class="carousel-img" src="assets/Fotografie.png" alt="Photo 1" loading="lazy" />
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.next">›</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+            </div>
+            <h3 class="project-title">Photography</h3>
+            <p class="project-desc"></p>
+          </article>
+
+          <article class="project project-carousel" data-carousel="3DSurfaces">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prev">‹</button>
+              <img class="carousel-img" src="assets/Screenshot1.png" alt="3D 1" loading="lazy" />
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.next">›</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+            </div>
+            <h3 class="project-title">Cat Skull Mask</h3>
+            <p class="project-desc"></p>
+          </article>
+
+          <article class="project project-carousel" data-carousel="VR">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prev">‹</button>
+              <div class="carousel-content"></div>
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.next">›</button>
+              <div class="carousel-dots"></div>
+            </div>
+
+            <h3 class="project-title">VR Assembly Training</h3>
+            <p class="project-desc">Unity XR prototype</p>
+
+            <div class="project-actions">
+              <a class="btn" href="assets/VR_Project.zip" download data-i18n="ui.downloadProject">
+                Download project file
+              </a>
+            </div>
+          </article>
+
+          <article class="project" id="openPAFilm" tabindex="0">
+            <div class="project-media">
+              <img src="assets/ScreenshotFilm.png" alt="PA Film" loading="lazy" />
+            </div>
+            <h3 class="project-title" data-i18n="p.pafilm.title">Film</h3>
+            <p class="project-desc" data-i18n="p.pafilm.desc">Film production project.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <div class="section-bar">
+        <button class="section-toggle" type="button" data-accordion="resumePanel" aria-expanded="false">
+          <span data-i18n="section.resume">Resume</span>
+          <span class="chev" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <div class="section-body is-collapsed" id="resumePanel">
+        <div class="card resume-card">
+          <h2 class="card-title" data-i18n="cv.title">Beruflicher Werdegang und Schulbildung</h2>
+
+          <div class="cv-table" role="table" aria-label="CV Timeline">
+            <div class="cv-row cv-head" role="row">
+              <div class="cv-cell cv-date" role="columnheader" data-i18n="cv.col.date">Zeitraum</div>
+              <div class="cv-cell" role="columnheader" data-i18n="cv.col.item">Station</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">09/2009 – 07/2015</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.1">Realschule, Herrieden</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">09/2015 – 07/2018</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.2">Berufsausbildung Industriemechanikerin, Robert Bosch GmbH, Ansbach</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">09/2018 – 08/2019</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.3">Berufsoberschule, Ansbach</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">10/2019 – 12/2019</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.4">Work&Travel, Australien</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">12/2019 – 12/2020</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.5">Verkäuferin und Kassenfachkraft, C&A, Ansbach</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">01/2021 – 09/2021</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.6">Kassenfachkraft, BGU-Baumarkt, Ansbach</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">10/2021 – 11/2023</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.7">Duale Studentin Bauingenieurwesen, DB E&amp;C, Nürnberg</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">12/2023 – 04/2024</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.8">Einrichterin, Oechsler AG, Ansbach</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">06/2024 – 09/2024</div>
+              <div class="cv-cell" role="cell" data-i18n="cv.9">Verkäuferin und Kassenfachkraft, C&amp;A, Ansbach</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">10/2024 – <span data-i18n="cv.now">Jetzt</span></div>
+              <div class="cv-cell" role="cell" data-i18n="cv.10">Studentin Visualisierung und Interaktion in digitalen Medien, Ansbach</div>
+            </div>
+
+            <div class="cv-row" role="row">
+              <div class="cv-cell cv-date" role="cell">05/2025 – <span data-i18n="cv.now">Jetzt</span></div>
+              <div class="cv-cell" role="cell" data-i18n="cv.11">Hauswirtschaftliche Hilfskraft, BRK, Ansbach</div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="card-title" style="margin-top: 22px;" data-i18n="cert.title">Certificates</h2>
+
+        <div class="cert-grid">
+          <article class="cert-card">
+            <img class="zoomable-img" src="assets/Zeugnis_Realschule.png" alt="Realschule" loading="lazy" />
+            <a class="cert-link" href="assets/Zeugnis_Realschule.pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card">
+            <img class="zoomable-img" src="assets/Zeugnis_Berufsschule.png" alt="Berufsschule" loading="lazy" />
+            <a class="cert-link" href="assets/Zeugnis_Berufsschule.pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card">
+            <img class="zoomable-img" src="assets/Zeugnis_IHK.png" alt="IHK" loading="lazy" />
+            <a class="cert-link" href="assets/Zeugnis_IHK.pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card project-carousel" data-carousel="zeugnis_bos">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prevPage">‹</button>
+              <img class="carousel-img" src="assets/Zeugnis_BOS.png" alt="BOS Page 1" loading="lazy" />
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.nextPage">›</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+            </div>
+            <a class="cert-link" href="assets/Zeugnis_BOS.pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card project-carousel" data-carousel="zeugnis_cunda">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prevPage">‹</button>
+              <img class="carousel-img" src="assets/Zeugnis_CundA.png" alt="C&A Page 1" loading="lazy" />
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.nextPage">›</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+            </div>
+            <a class="cert-link" href="assets/Zeugnis_CundA.pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card">
+            <img class="zoomable-img" src="assets/Zeugnis_BGU.png" alt="BGU" loading="lazy" />
+            <a class="cert-link" href="assets/Zeugnis_BGU.pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card project-carousel" data-carousel="zeugnis_th">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prevPage">‹</button>
+              <img class="carousel-img" src="assets/Zeugnis_TH_1.png" alt="TH Page 1" loading="lazy" />
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.nextPage">›</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+            </div>
+            <a class="cert-link" href="assets/Zeugnis_TH.pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card">
+            <img class="zoomable-img" src="assets/Zeugnis_OECHSLER.png" alt="OECHSLER" loading="lazy" />
+            <a class="cert-link" href="assets/Zeugnis_OECHSLER.png" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+
+          <article class="cert-card project-carousel" data-carousel="zeugnis_hs_ansbach">
+            <div class="project-media">
+              <button class="carousel-btn prev" type="button" data-i18n-attr="aria-label:ui.prevPage">‹</button>
+              <img class="carousel-img" src="assets/Zeugnis_HS_Ansbach_1.png" alt="HS Ansbach – Page 1" loading="lazy" />
+              <button class="carousel-btn next" type="button" data-i18n-attr="aria-label:ui.nextPage">›</button>
+              <div class="carousel-dots" aria-hidden="true"></div>
+            </div>
+            <a class="cert-link" href="assets/Zeugnis_HS_Ansbach .pdf" download data-i18n="ui.downloadPdf">Download PDF</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section-bar">
+        <button class="section-toggle" type="button" data-accordion="contactPanel" aria-expanded="false">
+          <span data-i18n="section.contact">Contact</span>
+          <span class="chev"></span>
+        </button>
+      </div>
+
+      <div class="section-body is-collapsed" id="contactPanel">
+        <div class="card contact-card">
+          <div class="contact-list">
+
+            <div class="contact-item">
+              <div class="contact-label" data-i18n="contact.mail">E-Mail</div>
+              <a class="contact-value" href="mailto:nikolabryks@gmx.de">nikolabryks@gmx.de</a>
+              <button class="contact-copy" type="button" data-copy="nikolabryks@gmx.de" data-i18n="ui.copy">Kopieren</button>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label" data-i18n="contact.phone">Telefon</div>
+              <a class="contact-value" href="tel:+4917643575728">+49 176 43575728</a>
+              <button class="contact-copy" type="button" data-copy="+49 176 43575728" data-i18n="ui.copy">Kopieren</button>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label" data-i18n="contact.address">Adresse</div>
+              <a
+                class="contact-value"
+                href="https://www.google.com/maps/place/u.+M%C3%BChlleite+5,+91522+Ansbach/@49.2647259,10.5867194,15z/data=!3m1!4b1!4m6!3m5!1s0x4798b9ddf4158269:0x4593704acf35b82a!8m2!3d49.2647274!4d10.6051519!16s%2Fg%2F11fn2j73qk?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener"
+              >
+                Untere Mühlleite 5, 91522 Ansbach
+              </a>
+              <button class="contact-copy" type="button" data-copy="Untere Mühlleite 5, 91522 Ansbach" data-i18n="ui.copy">Kopieren</button>
+            </div>
+
+          </div>
+
+          <p class="contact-hint" id="copyHint" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Nikola Bryks</p>
+    </footer>
+  </main>
+
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" aria-label="Close">&times;</button>
+      <div class="video-wrapper">
+        <iframe
+          id="projectVideo"
+          width="100%"
+          height="100%"
+          src=""
+          title="Space Elevator Animation"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="vrModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeVRModal" aria-label="Close">&times;</button>
+      <div class="video-wrapper">
+        <iframe
+          id="vrVideo"
+          src=""
+          title="VR Video"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="paModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closePAModal" aria-label="Close">&times;</button>
+      <div class="video-wrapper">
+        <iframe
+          id="paVideo"
+          src=""
+          title="PA Film"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="imageLightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img id="lightboxImg" src="" alt="">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
